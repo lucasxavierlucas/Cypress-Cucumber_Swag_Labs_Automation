@@ -4,6 +4,7 @@
 
 - [Node.js](https://nodejs.org/en/download/)
 - [Cypress](https://www.cypress.io/)
+- [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
 ## Rodando o projeto
 
@@ -21,3 +22,6 @@ No terminal, use os comandos:
 - [x] Padrão/Estrutura page objects ;
 - [x] 2 cenários de teste para automação.;
 
+## Diferenciais concluídos
+
+- [x] Relatório de Execução de Teste (Swag_Labs_Test_Reports.pdf)
