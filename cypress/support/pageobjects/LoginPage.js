@@ -30,6 +30,64 @@ class LoginPage {
     visualizarInventario() {
         cy.get(loginElements.diretorioInventario()).should('be.visible')
     }
+
+
+    //clica no botão ADD TO CART
+    clicarADD() {
+    cy.get(loginElements.clicarADD()).click()
+    cy.scrollTo('topRight')
+    
+}
+
+  //clica no botão CART
+  clicarCART() {
+ // cy.visit ( www.saucedemo.com/cart.html )
+   cy.get(loginElements.clicarCART()).click()
+      
+}
+
+  //clica no botão CHECKOUT
+ clicarCHECKOUT() {
+   cy.get(loginElements.clicarCHECKOUT()).click()
+}
+
+// insire o nome do usuario
+inserirNome() {
+    cy.get(loginElements.clicarCART()).click()
+    cy.get(loginElements.clicarCHECKOUT()).click()
+    cy.get(loginElements.inserirNome)
+}
+
+
+// insire o sobrenome do usuario
+inserirSobrenome() {
+    cy.get(loginElements.inserirSobrenome)
+}
+
+// insire o CEP do usuario
+inserirCEP() {
+    cy.get(loginElements.inserirCEP)
+    cy.get(loginElements.clicarCONTINUE()).click()
+    cy.get(loginElements.clicarFINISH()).click()
+}
+
+//clica no botão CONTINUE
+clicarCONTINUE() {
+    cy.get(loginElements.clicarCONTINUE()).click()
+}
+
+ //clica no botão FINISH
+ clicarFINISH() {
+    cy.get(loginElements.clicarFINISH()).click()
+}
+
+// Verifica se foi direcionado a pagina de conclusão do pedido
+visualizarPonyExpress() {
+    cy.get(loginElements.diretorioPonyExpress()).should('be.visible')
+}
+
+
+
 }
 
 export default LoginPage;
