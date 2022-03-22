@@ -1,6 +1,6 @@
 # Desafio técnico UOL EdTech
 
-## Dependencias
+## Dependências
 
 - [Node.js](https://nodejs.org/en/download/)
 - [Cypress](https://www.cypress.io/)
