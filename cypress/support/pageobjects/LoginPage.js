@@ -41,7 +41,6 @@ class LoginPage {
 
   //clica no botão CART
   clicarCART() {
- // cy.visit ( www.saucedemo.com/cart.html )
    cy.get(loginElements.clicarCART()).click()
       
 }
@@ -69,6 +68,7 @@ inserirCEP() {
     cy.get(loginElements.inserirCEP)
     cy.get(loginElements.clicarCONTINUE()).click()
     cy.get(loginElements.clicarFINISH()).click()
+    cy.get(loginElements.diretorioPonyExpress()).should('be.visible')
 }
 
 //clica no botão CONTINUE
