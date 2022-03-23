@@ -7,7 +7,12 @@ Feature: Login site Swag Labs
         And clico no botão LOGGIN
         Then devo ser direcionado ao inventário de produtos
 
-    
+    Scenario: Validar conclusão de pedido
+        Given acesso o site SwagLabs
+        When insiro o login do usuario
+        And insiro a senha do usuario
+        And clico no botão LOGGIN
+        Then devo ser direcionado ao inventário de produtos
         Given clico em ADD TO CART
         When clico no CART
         And clico em CHECKOUT

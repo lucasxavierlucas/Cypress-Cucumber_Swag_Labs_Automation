@@ -8,11 +8,11 @@ Given(/^clico em ADD TO CART$/, () => {
 });
 
 When(/^clico no CART$/, () => {
-	loginPage.clicarCART;
+	loginPage.clicarCART();
 });
 
 And(/^clico em CHECKOUT$/, () => {
-	loginPage.clicarCHECKOUT;
+	loginPage.clicarCHECKOUT();
 });
 
 And(/^insiro meu nome$/, () => {
@@ -28,13 +28,13 @@ And(/^insiro meu CEP$/, () => {
 });
 
 And(/^clico em CONTINUE$/, () => {
-	loginPage.clicarCONTINUE;
+	loginPage.clicarCONTINUE();
 });
 
 And(/^clico em FINISH$/, () => {
-	loginPage.clicarFINISH;
+	loginPage.clicarFINISH();
 });
 
 Then(/^devo ser direcionado a pagina de conclusão do pedido$/, () => {
-    loginPage.visualizarPonyExpress;
+    loginPage.visualizarPonyExpress();
 });

@@ -52,8 +52,6 @@ class LoginPage {
 
 // insire o nome do usuario
 inserirNome() {
-    cy.get(loginElements.clicarCART()).click()
-    cy.get(loginElements.clicarCHECKOUT()).click()
     cy.get(loginElements.inserirNome)
 }
 
@@ -65,10 +63,7 @@ inserirSobrenome() {
 
 // insire o CEP do usuario
 inserirCEP() {
-    cy.get(loginElements.inserirCEP)
-    cy.get(loginElements.clicarCONTINUE()).click()
-    cy.get(loginElements.clicarFINISH()).click()
-    cy.get(loginElements.diretorioPonyExpress()).should('be.visible')
+    cy.get(loginElements.inserirCEP)   
 }
 
 //clica no botão CONTINUE
