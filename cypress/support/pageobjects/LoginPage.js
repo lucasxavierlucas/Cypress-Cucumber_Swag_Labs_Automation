@@ -8,6 +8,7 @@ class LoginPage {
     
     // Acessa o site que será testado
     acessarSite() {
+        cy.exec('npm cache clear --force')
         cy.visit(url)
     }
 
@@ -79,6 +80,7 @@ clicarCONTINUE() {
 // Verifica se foi direcionado a pagina de conclusão do pedido
 visualizarPonyExpress() {
     cy.get(loginElements.diretorioPonyExpress()).should('be.visible')
+    
 }
 
 
