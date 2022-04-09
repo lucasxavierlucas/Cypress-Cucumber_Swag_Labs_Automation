@@ -1,4 +1,4 @@
-# Desafio técnico UOL EdTech
+# Cypress & Cucumber: Automação no Swag Labs
 
 ## Dependências
 
